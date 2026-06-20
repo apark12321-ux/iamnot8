@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>내 가방에 내가 없다 | 황별초 작가 첫 책 기념 아카이브</title>
+  <meta name="description" content="황별초 작가의 첫 책 『내 가방에 내가 없다』 출간을 오래 기념하기 위한 작은 아카이브입니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="내 가방에 내가 없다" />
+  <meta property="og:description" content="황별초 작가의 첫 책 출간 기념 아카이브" />
+  <meta property="og:image" content="https://image.yes24.com/goods/191509059/XL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Pen+Script&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#130c12;
+      --bg2:#21121b;
+      --ink:#fff8f2;
+      --muted:#d9c8c0;
+      --soft:#a98784;
+      --rose:#eec6bb;
+      --rose2:#b76e79;
+      --gold:#e9c982;
+      --line:rgba(255,255,255,.14);
+      --glass:rgba(255,255,255,.075);
+      --shadow:0 28px 90px rgba(0,0,0,.42);
+      --radius:28px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(183,110,121,.42), transparent 34%),
+        radial-gradient(circle at 86% 20%, rgba(233,201,130,.16), transparent 34%),
+        linear-gradient(135deg,var(--bg),#24111d 46%,#0f0b10);
+      overflow-x:hidden;
+      word-break:keep-all;
+    }
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+      background-size:52px 52px;
+      mask-image:linear-gradient(to bottom,rgba(0,0,0,.75),transparent 75%);
+      z-index:0;
+    }
+    a{color:inherit;text-decoration:none}
+    .page{position:relative;z-index:1}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    .nav{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:blur(18px);
+      background:rgba(19,12,18,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.03em}
+    .mark{width:36px;height:36px;border-radius:13px;background:linear-gradient(135deg,var(--rose),var(--gold));box-shadow:0 12px 40px rgba(233,201,130,.22)}
+    .nav-links{display:flex;align-items:center;gap:22px;color:#eadbd5;font-size:14px}
+    .nav-links a{opacity:.82}.nav-links a:hover{opacity:1;color:#fff}
+    .pill{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      min-height:42px;padding:0 18px;border:1px solid rgba(255,255,255,.18);
+      border-radius:999px;background:rgba(255,255,255,.08);font-weight:700;font-size:14px;
+    }
+    .pill.primary{background:linear-gradient(135deg,#fff0df,var(--gold));color:#2a1714;border:0;box-shadow:0 16px 44px rgba(233,201,130,.25)}
+
+    .hero{padding:78px 0 82px;position:relative}
+    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:58px;align-items:center}
+    .eyebrow{color:var(--gold);font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+    h1{
+      margin:0 0 24px;
+      font-family:"Nanum Pen Script","Gowun Dodum",cursive;
+      font-size:clamp(56px,7vw,104px);
+      line-height:.94;
+      letter-spacing:-.06em;
+      font-weight:400;
+    }
+    .subtitle{font-size:clamp(18px,2.2vw,25px);line-height:1.72;color:#f2e6de;max-width:710px;margin:0 0 30px;font-family:"Gowun Dodum",sans-serif}
+    .hero-copy{font-size:16px;line-height:1.92;color:var(--muted);max-width:650px;margin:0 0 34px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+    .meta-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:620px}
+    .meta-card{padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.065)}
+    .meta-card b{display:block;font-size:19px;color:#fff;margin-bottom:4px}.meta-card span{font-size:13px;color:var(--soft)}
+
+    .book-stage{position:relative;min-height:650px;display:flex;align-items:center;justify-content:center}
+    .halo{position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(238,198,187,.34),transparent 64%);filter:blur(8px)}
+    .cover-card{
+      position:relative;width:min(430px,86vw);padding:22px;border:1px solid rgba(255,255,255,.18);border-radius:34px;
+      background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.045));box-shadow:var(--shadow);
+      transform:rotate(-2deg);
+    }
+    .cover-card:after{content:"";position:absolute;inset:18px -18px -18px 36px;border-radius:34px;background:rgba(0,0,0,.28);filter:blur(22px);z-index:-1}
+    .cover{display:block;width:100%;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.38);background:#eee}
+    .cover-caption{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 6px 4px;color:#f2dfd7;font-size:14px}
+    .cover-caption strong{color:#fff;font-size:15px}.seal{font-family:"Nanum Pen Script";font-size:30px;color:var(--gold);white-space:nowrap}
+
+    section{padding:86px 0;border-top:1px solid rgba(255,255,255,.08)}
+    .section-head{max-width:760px;margin-bottom:34px}.kicker{color:var(--gold);font-weight:800;font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px}
+    h2{margin:0;font-family:"Gowun Dodum",sans-serif;font-size:clamp(30px,4.4vw,52px);line-height:1.18;letter-spacing:-.055em;font-weight:400}
+    .lead{margin:18px 0 0;color:var(--muted);font-size:17px;line-height:1.86}
+    .panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.045));box-shadow:0 24px 70px rgba(0,0,0,.22);overflow:hidden}
+
+    .intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}
+    .quote-card{padding:34px;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;background:rgba(255,255,255,.06)}
+    .quote{font-family:"Nanum Pen Script";font-size:clamp(38px,5vw,62px);line-height:1.05;color:#fff;margin:0 0 28px;letter-spacing:-.04em}
+    .quote small{display:block;font-family:Pretendard,sans-serif;font-size:14px;color:var(--soft);margin-top:18px;letter-spacing:0}
+    .story{padding:34px;color:#eadbd5;font-size:16px;line-height:1.96}.story p{margin:0 0 18px}.story p:last-child{margin-bottom:0}
+
+    .bag-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .bag-item{position:relative;min-height:190px;padding:24px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.065);overflow:hidden;transition:.25s ease}
+    .bag-item:hover{transform:translateY(-5px);background:rgba(255,255,255,.1)}
+    .bag-item:before{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:rgba(233,201,130,.13)}
+    .bag-item strong{display:block;font-size:21px;margin-bottom:12px;color:#fff;font-family:"Gowun Dodum"}.bag-item p{margin:0;color:var(--muted);line-height:1.72;font-size:14px}
+
+    .dedication{padding:54px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(233,201,130,.16),transparent 56%),linear-gradient(150deg,rgba(255,255,255,.11),rgba(255,255,255,.04))}
+    .to{font-size:15px;color:var(--gold);font-weight:800;letter-spacing:.08em;margin-bottom:22px}
+    .dedication h2{font-family:"Nanum Pen Script";font-size:clamp(40px,5.8vw,78px);line-height:1.02;margin-bottom:24px}
+    .dedication p{max-width:760px;margin:0 auto 18px;color:#f0e0d8;line-height:1.94;font-size:17px}.signature{margin-top:30px;color:#fff;font-family:"Nanum Pen Script";font-size:34px}.archive-word{margin-top:18px;color:var(--soft);font-size:12px;letter-spacing:.22em;font-weight:800}
+
+    .authors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.author{padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.06);min-height:148px}.author b{display:block;font-size:20px;margin-bottom:10px}.author p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}.author.featured{background:linear-gradient(145deg,rgba(238,198,187,.18),rgba(233,201,130,.08));border-color:rgba(233,201,130,.34)}
+
+    .toc{display:grid;grid-template-columns:1fr 1fr;gap:18px}.toc-card{padding:30px}.toc-card h3{margin:0 0 18px;font-family:"Gowun Dodum";font-size:25px}.toc-card ol{margin:0;padding-left:20px;color:#eadbd5;line-height:1.9}.toc-card li::marker{color:var(--gold);font-weight:800}
+
+    .trailer-grid{display:grid;grid-template-columns:1fr .9fr;gap:22px;align-items:stretch}.video{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#000;border:1px solid var(--line)}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.trailer-note{padding:34px}.trailer-note p{color:var(--muted);line-height:1.85;margin:0 0 18px}.trailer-note h3{font-size:30px;line-height:1.25;margin:0 0 16px;font-family:"Gowun Dodum"}
+
+    .buy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.buy{padding:24px;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.07);transition:.22s ease}.buy:hover{transform:translateY(-4px);background:rgba(255,255,255,.11)}.buy b{display:block;font-size:20px;margin-bottom:8px}.buy span{color:var(--soft);font-size:13px}.buy em{display:block;margin-top:20px;color:var(--gold);font-style:normal;font-weight:800}
+    .final{padding:84px 0 96px;text-align:center}.final .hand{font-family:"Nanum Pen Script";font-size:clamp(42px,6vw,82px);line-height:1.05;margin:0 0 18px}.final p{color:var(--muted);line-height:1.8;margin:0 auto;max-width:680px}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--soft);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+    .fade{opacity:0;transform:translateY(18px);transition:opacity .72s ease,transform .72s ease}.fade.on{opacity:1;transform:none}
+    @media(max-width:940px){
+      .hero-grid,.intro-grid,.trailer-grid{grid-template-columns:1fr}.book-stage{min-height:auto;padding-top:24px}.bag-grid,.authors,.buy-grid{grid-template-columns:repeat(2,1fr)}.toc{grid-template-columns:1fr}.nav-links{display:none}.hero{padding-top:52px}.meta-row{grid-template-columns:1fr 1fr 1fr}.dedication{padding:36px 22px}
+    }
+    @media(max-width:620px){
+      .wrap{width:min(100% - 28px,var(--max))}.hero{padding:40px 0 58px}h1{font-size:56px}.subtitle{font-size:17px}.meta-row,.bag-grid,.authors,.buy-grid{grid-template-columns:1fr}.cover-card{transform:none}.section{padding:64px 0}.dedication p{font-size:16px}.footer-inner{display:block}.footer-inner div+div{margin-top:8px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Book",
+    "name":"내 가방에 내가 없다",
+    "author":["황별초","강준우","김낙균","김동현","송숙희","양광모","이화정","전선희"],
+    "publisher":"천그루숲",
+    "isbn":"9791199095260",
+    "image":"https://image.yes24.com/goods/191509059/XL",
+    "inLanguage":"ko"
+  }
+  </script>
+</head>
+<body>
+<div class="page">
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><span class="mark"></span><span>내 가방에 내가 없다</span></a>
+      <div class="nav-links">
+        <a href="#book">책 소개</a>
+        <a href="#dedication">헌정</a>
+        <a href="#authors">저자</a>
+        <a href="#buy">구매</a>
+      </div>
+      <a class="pill primary" href="#buy">책 보러가기</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow fade">FIRST BOOK · FOREVER ARCHIVE</div>
+        <h1 class="fade">내 가방에<br>내가 없다</h1>
+        <p class="subtitle fade">오늘도 나답게 살고 싶은 당신에게 건네는 여덟 작가의 문장.</p>
+        <p class="hero-copy fade">우리는 저마다의 가방을 들고 살아갑니다. 그 안에는 역할, 책임, 관계, 미뤄둔 마음이 차곡차곡 쌓입니다. 이 책은 그 가방 속에서 문득 사라진 ‘나’를 다시 찾기 위해 쓰인 조용하고 단단한 기록입니다.</p>
+        <div class="actions fade">
+          <a class="pill primary" href="#book">책 소개 읽기</a>
+          <a class="pill" href="#dedication">황별초 작가님께</a>
+          <a class="pill" href="#trailer">북트레일러</a>
+        </div>
+        <div class="meta-row fade">
+          <div class="meta-card"><b>황별초 외 7인</b><span>공동 저자</span></div>
+          <div class="meta-card"><b>천그루숲</b><span>출판사</span></div>
+          <div class="meta-card"><b>첫 책</b><span>기념 아카이브</span></div>
+        </div>
+      </div>
+      <div class="book-stage fade">
+        <div class="halo"></div>
+        <div class="cover-card">
+          <img class="cover" src="https://image.yes24.com/goods/191509059/XL" alt="내 가방에 내가 없다 책 표지" loading="eager" />
+          <div class="cover-caption"><strong>내 가방에 내가 없다</strong><span class="seal">첫 책의 순간</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="book">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">ABOUT THE BOOK</div>
+          <h2>가방을 열어보니, 정작 내가 없었습니다.</h2>
+          <p class="lead">『내 가방에 내가 없다』는 관계와 역할 속에서 잊고 지낸 자기 자신을 다시 바라보게 하는 에세이입니다. 여덟 명의 저자는 각자의 언어로 삶의 무게, 회복, 선택, 다정함을 이야기합니다.</p>
+        </div>
+        <div class="intro-grid">
+          <div class="panel quote-card fade">
+            <p class="quote">“나는 어디에<br>두고 온 걸까.”<small>가방 속에서 다시 꺼내는 나의 이름</small></p>
+            <a class="pill" href="#toc">목차 보기</a>
+          </div>
+          <div class="panel story fade">
+            <p>이 책의 제목은 묻습니다. 매일 챙겨 넣는 것들은 많은데, 그 안에 정작 ‘나’는 있는지.</p>
+            <p>가족을 위해, 일을 위해, 오늘을 견디기 위해 우리는 수많은 것을 가방에 넣습니다. 하지만 어느 순간 가장 먼저 챙겼어야 할 마음을 잊고 있었다는 사실을 깨닫습니다.</p>
+            <p>『내 가방에 내가 없다』는 그 깨달음에서 출발합니다. 완벽한 답을 말하기보다, 잊힌 마음을 조용히 꺼내어 다시 바라보게 하는 책입니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">KEYWORDS</div>
+          <h2>이 책이 품고 있는 마음들</h2>
+        </div>
+        <div class="bag-grid">
+          <div class="bag-item fade"><strong>나</strong><p>역할 뒤에 가려졌던 이름을 다시 불러보는 시간.</p></div>
+          <div class="bag-item fade"><strong>가방</strong><p>하루의 무게와 오래된 마음이 함께 담기는 공간.</p></div>
+          <div class="bag-item fade"><strong>회복</strong><p>잃어버린 것을 찾는 일이 아니라, 나를 다시 돌보는 일.</p></div>
+          <div class="bag-item fade"><strong>문장</strong><p>조용히 건네지만 오래 남는 여덟 작가의 고백.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dedication">
+      <div class="wrap">
+        <div class="panel dedication fade">
+          <div class="to">TO. 황별초 작가님</div>
+          <h2>당신의 이름이 책등에 새겨진 날을,<br>오래 보관하고 싶었습니다.</h2>
+          <p>누군가의 아내, 엄마, 딸이라는 이름 뒤에서 조용히 견뎌온 시간들이 이제는 한 권의 책으로 세상에 놓였습니다. 이곳은 그 첫 걸음을 오래 축하하기 위한 작은 기록입니다.</p>
+          <p>책장을 넘길 때마다, 당신이 오래 품어온 마음과 문장이 누군가에게 조용히 닿기를 바랍니다. 그리고 이 첫 책의 순간이 언제든 다시 열어볼 수 있는 가방처럼 남아 있기를 바랍니다.</p>
+          <div class="signature">가장 가까이에서 오래 응원해 온 사람, 남편 박예준</div>
+          <div class="archive-word">FIRST BOOK · FOREVER ARCHIVE</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="authors">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">AUTHORS</div>
+          <h2>여덟 명의 작가가 함께 쓴 한 권의 마음</h2>
+          <p class="lead">각자의 삶에서 길어 올린 문장들이 모여 하나의 책이 되었습니다.</p>
+        </div>
+        <div class="authors">
+          <div class="author featured fade"><b>황별초</b><p>첫 책의 이름으로 오래 기억될 작가.</p></div>
+          <div class="author fade"><b>강준우</b><p>삶의 장면을 문장으로 건네는 저자.</p></div>
+          <div class="author fade"><b>김낙균</b><p>일상 속 사유를 담아내는 저자.</p></div>
+          <div class="author fade"><b>김동현</b><p>자기만의 언어로 이야기를 잇는 저자.</p></div>
+          <div class="author fade"><b>송숙희</b><p>따뜻한 시선으로 삶을 바라보는 저자.</p></div>
+          <div class="author fade"><b>양광모</b><p>생각과 마음을 문장으로 세우는 저자.</p></div>
+          <div class="author fade"><b>이화정</b><p>담담한 고백을 글로 남기는 저자.</p></div>
+          <div class="author fade"><b>전선희</b><p>삶의 무늬를 기록하는 저자.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="toc">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">CONTENTS</div>
+          <h2>책장을 넘기며 만나는 흐름</h2>
+        </div>
+        <div class="toc">
+          <div class="panel toc-card fade">
+            <h3>1부. 가방 속에 담아온 것들</h3>
+            <ol>
+              <li>내가 사라진 자리에서 시작된 질문</li>
+              <li>역할이라는 이름으로 살아온 시간</li>
+              <li>무심코 지나친 마음의 무게</li>
+              <li>다시 나를 부르는 문장들</li>
+            </ol>
+          </div>
+          <div class="panel toc-card fade">
+            <h3>2부. 다시 나를 챙기는 법</h3>
+            <ol>
+              <li>오늘의 나를 인정하는 연습</li>
+              <li>잃어버린 마음을 꺼내는 시간</li>
+              <li>관계 속에서도 나로 남는 일</li>
+              <li>이제 내 가방에 나를 넣는 일</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trailer">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">BOOK TRAILER</div>
+          <h2>책의 분위기를 먼저 만나는 영상</h2>
+        </div>
+        <div class="trailer-grid">
+          <div class="video fade">
+            <iframe src="https://www.youtube.com/embed?listType=search&list=%EB%82%B4%20%EA%B0%80%EB%B0%A9%EC%97%90%20%EB%82%B4%EA%B0%80%20%EC%97%86%EB%8B%A4%20%EB%B6%81%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC" title="내 가방에 내가 없다 북트레일러" allowfullscreen></iframe>
+          </div>
+          <div class="panel trailer-note fade">
+            <h3>문장보다 먼저 도착하는 분위기</h3>
+            <p>책의 정서를 영상으로 먼저 만나보세요. 표지, 제목, 문장 사이에 놓인 여백이 이 책의 첫인상을 만들어 줍니다.</p>
+            <a class="pill" href="#buy">책 구매하러 가기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div class="kicker">BUY THE BOOK</div>
+          <h2>지금 책으로 만나기</h2>
+          <p class="lead">가까운 온라인 서점에서 『내 가방에 내가 없다』를 확인할 수 있습니다.</p>
+        </div>
+        <div class="buy-grid">
+          <a class="buy fade" href="https://www.yes24.com/product/goods/191509059" target="_blank" rel="noopener"><b>YES24</b><span>도서 정보와 구매</span><em>바로가기 →</em></a>
+          <a class="buy fade" href="https://search.kyobobook.co.kr/search?keyword=%EB%82%B4%20%EA%B0%80%EB%B0%A9%EC%97%90%20%EB%82%B4%EA%B0%80%20%EC%97%86%EB%8B%A4" target="_blank" rel="noopener"><b>교보문고</b><span>통합 검색</span><em>바로가기 →</em></a>
+          <a class="buy fade" href="https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=All&SearchWord=%EB%82%B4+%EA%B0%80%EB%B0%A9%EC%97%90+%EB%82%B4%EA%B0%80+%EC%97%86%EB%8B%A4" target="_blank" rel="noopener"><b>알라딘</b><span>통합 검색</span><em>바로가기 →</em></a>
+          <a class="buy fade" href="https://search.shopping.naver.com/book/search?bookTabType=ALL&query=%EB%82%B4%20%EA%B0%80%EB%B0%A9%EC%97%90%20%EB%82%B4%EA%B0%80%20%EC%97%86%EB%8B%A4" target="_blank" rel="noopener"><b>네이버 책</b><span>도서 검색</span><em>바로가기 →</em></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="final">
+      <div class="wrap fade">
+        <p class="hand">첫 책은 한 번뿐이라서,<br>더 오래 남겨두고 싶었습니다.</p>
+        <p>『내 가방에 내가 없다』와 황별초 작가의 첫 걸음을 축하합니다.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>© 내 가방에 내가 없다 Archive</div>
+      <div>For Hwang Byeolcho</div>
+    </div>
+  </footer>
+</div>
+<script>
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
